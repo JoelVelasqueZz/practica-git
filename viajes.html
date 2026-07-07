@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-  <html lang="es">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <title>Mis Viajes</title>
     <style>
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { font-family: Arial, sans-serif; background: #f0f4f8; padding: 20px; }
-      h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 36px; }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f4f8;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 30px;
+        font-size: 36px;
+      }
+
       .destinos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -14,14 +30,19 @@
         max-width: 900px;
         margin: 0 auto;
       }
+
       .destino {
         background: white;
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s;
       }
-      .destino:hover { transform: translateY(-4px); }
+
+      .destino:hover {
+        transform: translateY(-4px);
+      }
+
       .destino-img {
         width: 100%;
         height: 160px;
@@ -31,9 +52,22 @@
         font-size: 60px;
         background: #f8f9fa;
       }
-      .destino-info { padding: 16px; }
-      .destino-info h2 { color: #2c3e50; margin-bottom: 8px; }
-      .destino-info p { color: #666; font-size: 14px; line-height: 1.5; }
+
+      .destino-info {
+        padding: 16px;
+      }
+
+      .destino-info h2 {
+        color: #2c3e50;
+        margin-bottom: 8px;
+      }
+
+      .destino-info p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
       .tag {
         display: inline-block;
         background: #3498db;
@@ -56,6 +90,7 @@
           <span class="tag">Europa</span>
         </div>
       </div>
+
       <div class="destino">
         <div class="destino-img">⛩️</div>
         <div class="destino-info">
@@ -64,6 +99,16 @@
           <span class="tag">Asia</span>
         </div>
       </div>
+
+      <div class="destino">
+        <div class="destino-img">🎭</div>
+        <div class="destino-info">
+          <h2>Roma</h2>
+          <p>La ciudad eterna. Coliseo y la mejor pasta.</p>
+          <span class="tag">Europa</span>
+        </div>
+      </div>
+
       <div class="destino">
         <div class="destino-img">🗽</div>
         <div class="destino-info">
@@ -74,4 +119,4 @@
       </div>
     </div>
   </body>
-  </html>
+</html>
